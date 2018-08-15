@@ -67,7 +67,7 @@ To hit the application, the simplest way is to use the `kubectl port-forward` co
 kubectl port-forward deployment/hello-world 8080
 ```
 
-You should now be able to hit the Hello World application on port http://localhost:8080 - so in another terminal window:
+You should now be able to hit the Hello World application on http://localhost:8080 - so in another terminal window:
 
 ```
 $ curl http://localhost:8080
