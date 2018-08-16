@@ -1,0 +1,3 @@
+[submodule "docker-helloworld-python-microservice"]
+	path = docker-helloworld-python-microservice
+	url = https://github.com/drhelius/docker-helloworld-python-microservice.git
