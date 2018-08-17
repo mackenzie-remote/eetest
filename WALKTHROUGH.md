@@ -1,27 +1,12 @@
-### Minikube Proof of Concept
-
-## Introduction
-
-This repository contains a simple guide to getting started with [Minikube](https://kubernetes.io/docs/setup/minikube/), which is an easy way to test out [Kubernetes](https://kubernetes.io) on your local machine.
+### Minikube Proof of Concept Walkthrough
 
 ## Minikube Set-up
 
-### Install Minikube
+## Install Minikube
 
 Due to time constaints, this guide assumes you are running MacOS and are already familiar with the command-line.
 
-You will need root if you do not already have the prerequisite software installed on your machine.
-
-0. Follow the instructions to [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) on your local machine.
-
-1. Verify you have `minikube` and `kubectl` installed and accessible in your path. (NB: Your versions may vary slightly).
-
-```
-$ minikube version
-minikube version: v0.28.2
-$ kubectl version --client --short
-Client Version: v1.10.2
-```
+1. Ensure you have installed the *Dependencies* as listed in the [README.md](README.md).
 
 2. Start the local minikube cluster:
 ```
@@ -36,15 +21,11 @@ NAME       STATUS    ROLES     AGE       VERSION
 minikube   Ready     master    20s       v1.10.0
 ```
 
-### Creating Our First Application in Kubernetes
+### Creating Our First Application in Kubernetes using the CLI
 
 Before we start, we need a docker image. We could create our own `Dockerfile`, build our own image, create an account on a public docker image repository (for example, [Docker Hub](https://hub.docker.com/)) and upload this image.
 
 In this instance though, we will simply use a Python Hello World image that is available for us to use.
-
-### kubectl run vs kubectl apply -f
-
-Again, for the simple reason of speed, we will use `kubectl run` to launch our container. For an application that is being created correctly, we should not really do this except for quick tests, and should instead write `yaml` files that we can commit to source control.
 
 ### Hello-World
 
